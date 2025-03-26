@@ -1,8 +1,22 @@
+# Next.js Project
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```  
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -12,25 +26,49 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+```  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the project by modifying `app/page.tsx`. Changes are applied automatically.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Server-Side Rendering (SSR)** to pre-render content on the server for improved SEO and performance.
+- **Infinite Scrolling** for seamless data loading as the user scrolls.
+- **Light/Dark Theme Toggle** for enhanced user experience and accessibility.
+- **State Management with Zustand**.
+- **Responsive UI** using Tailwind CSS.
+- **Search Functionality** to filter content dynamically.
+- **Deployed on Vercel** for easy access and scalability.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌍 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is deployed on **Vercel** and can be accessed here:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔗 **[Live Demo](https://blog-nextjs-mu-three.vercel.app/)**
 
-## Deploy on Vercel
+## 📝 Assumptions & Limitations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Assumptions**:
+    - The project uses **JSONPlaceholder** as a mock API for demonstration purposes.
+    - The app assumes that the API will always return data in the expected format.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Limitations**:
+    - **Mock API**: The data is fetched from a mock API (JSONPlaceholder) and not from a real backend.
+    - **No Authentication**: This project does not implement authentication or authorization.
+
+## 📡 API Integration
+
+This project integrates with [`jsonplaceholder.typicode.com`](https://jsonplaceholder.typicode.com), which provides a mock API for posts.
+
+- The **API** is used to fetch a list of posts and display them in the application.
+- **Server-Side Rendering (SSR)** is used to fetch the data before the page is rendered.
+- **Infinite Scrolling** is implemented for dynamically loading more posts as the user scrolls.
+
+### Tools and Setup
+- **JSONPlaceholder API** is used to simulate fetching real-world data.
+- **Tailwind CSS** is used for styling the UI.
+- **Zustand** is used for managing state across components.
+- **Light/Dark Theme Toggle** functionality is implemented using localStorage and Zustand for theme persistence.
+
